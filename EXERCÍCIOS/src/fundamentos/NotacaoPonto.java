@@ -15,7 +15,7 @@ public class NotacaoPonto {
 		
 		//usando notação ponto em uma única linha
 		
-		String x="Leo".replace("L","T").toLowerCase().concat(" cuzão");
+		String x="Leo".replace("L","T").toLowerCase().concat(" indo");
 		System.out.println(x);
 		
 	//não existe operador nos tipos primitivos
