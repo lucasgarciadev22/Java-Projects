@@ -2,6 +2,10 @@ package ori_obj_heranca;
 
 public class Heroi extends Jogador  { // Heroi herda atributos da classe Jogador
 	
+	public Heroi() {
+		this(0,0);
+	}
+	
 	public Heroi(int x, int y) {
 		super(x, y); //chama da classe pai
 	}
