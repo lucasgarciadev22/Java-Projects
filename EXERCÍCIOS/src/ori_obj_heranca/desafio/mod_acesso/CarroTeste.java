@@ -1,4 +1,8 @@
-package ori_obj_heranca.desafio;
+package ori_obj_heranca.desafio.mod_acesso;
+
+import ori_obj_heranca.desafio.Carro;
+import ori_obj_heranca.desafio.Civic;
+import ori_obj_heranca.desafio.Ferrari;
 
 public class CarroTeste {
 	

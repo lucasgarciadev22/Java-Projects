@@ -2,6 +2,10 @@ package ori_obj_heranca;
 
 public class Heroi extends Jogador  { // Heroi herda atributos da classe Jogador
 	
+	public Heroi(int x, int y) {
+		super(x, y); //chama da classe pai
+	}
+	
 //	//Sobescrever métodos padrão da classe Jogador 	
 //		boolean atacar (Jogador oponente) {
 //		int deltaX = Math.abs(x - oponente.x);
@@ -20,17 +24,15 @@ public class Heroi extends Jogador  { // Heroi herda atributos da classe Jogador
 //	}
 //	
 	//outros métodos de sobrescrita usando super classe
-	
-	//ataque o dobro 
-	boolean atacar (Jogador oponente) {
+
+	//ataque o dobro (sobrescrito)
+	@Override
+	public boolean atacar (Jogador oponente) {
 		boolean ataque1 = super.atacar(oponente);
 		boolean ataque2 = super.atacar(oponente);
-		return ataque1 || ataque2;
+		boolean ataque3 = super.atacar(oponente);
+		return ataque1 || ataque2 || ataque3;
 		
 	}
 	
-		
-		
-		
-
 }

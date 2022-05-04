@@ -1,10 +1,14 @@
-package ori_obj_heranca;
+package ori_obj_heranca.desafio.mod_acesso;
+
+import ori_obj_heranca.Direcao;
+import ori_obj_heranca.Heroi;
+import ori_obj_heranca.Monstro;
 
 public class Jogo {
 	
 	public static void main(String[] args) {
 	
-	Heroi heroi = new Heroi();
+	Heroi heroi = new Heroi(0, 0);
 	Monstro monstro = new Monstro();
 	
 	//posição inicial do jogador

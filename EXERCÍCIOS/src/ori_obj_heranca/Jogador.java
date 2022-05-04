@@ -2,12 +2,20 @@ package ori_obj_heranca;
 
 public class Jogador {
 	
-	int vida = 100;// hp inicial
-	int x;
-	int y;
+	public int vida = 100;// hp inicial
+	public int x;
+	public int y;
+	
+	//construtor padrão  (transferido por herança)
+	protected Jogador (int x, int y) {
+		this.x =x;
+		this.y = y;
+	}
+	
+	
 	
 	//verifica alinhamento em x e distância em y dos jogadores
-	boolean atacar (Jogador oponente) {
+	public boolean atacar (Jogador oponente) { // tornar função pública
 		int deltaX = Math.abs(x - oponente.x);
 		int deltaY = Math.abs(y - oponente.y);
 		
@@ -23,7 +31,7 @@ public class Jogador {
 		else return false;
 	}
 	
-	boolean andar(Direcao direcao) {
+	public boolean andar(Direcao direcao) {
 		//usando cases para cada direção da enum Direcao
 		switch(direcao) {
 		case NORTE:
