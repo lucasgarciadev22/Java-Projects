@@ -3,8 +3,18 @@ package ori_obj_heranca.desafio;
 public class Carro {
 	public final int VELOCIDADE_MAXIMA; //constante de limite de velocidade (pode ser publico)
 	protected int velocidadeAtual;//transferido por herança
-	protected int delta = 5;//transferido por herança
+	private int delta = 5;//transferido por herança
 	
+	public int getDelta() {
+		return delta;
+	}
+
+
+	public void setDelta(int delta) {
+		this.delta = delta;
+	}
+
+
 	//no construtor de Carro eu declaro a constante VELOCIDADE_MAXIMA
 	protected Carro (int velocidadeMaxima) {
 		VELOCIDADE_MAXIMA = velocidadeMaxima;
@@ -12,10 +22,10 @@ public class Carro {
 	
 	
 	public void acelerar() {//tornar publico este método
-		if (velocidadeAtual +delta > VELOCIDADE_MAXIMA){//verifica cada vez se já ultrapassou o limite de velocidade
+		if (velocidadeAtual +getDelta() > VELOCIDADE_MAXIMA){//verifica cada vez se já ultrapassou o limite de velocidade
 		velocidadeAtual = VELOCIDADE_MAXIMA;//limita velocidade
 		}else {
-		velocidadeAtual +=delta;
+		velocidadeAtual +=getDelta();
 		}
 		
 	}
