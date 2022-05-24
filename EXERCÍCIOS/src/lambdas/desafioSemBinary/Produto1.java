@@ -1,12 +1,12 @@
-package lambdas;
+package lambdas.desafioSemBinary;
 
-public class Produto {
+public class Produto1 {
 	
 	final String nome;
 	final double preco;
 	final double desconto;
 	
-	public Produto(String nome, double preco, double desconto) {
+	public Produto1(String nome, double preco, double desconto) {
 		super();
 		this.nome = nome;
 		this.preco = preco;
